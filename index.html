@@ -10,8 +10,88 @@
     <meta charset="UTF-8">
     <title>AINBall-inator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--    BOOTSTRAP AND OTHER FILES-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/img/icon/favicon-16x16.png">
+    <link rel="mask-icon" href="src/img/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--    CSS AND JAVASCRIPT-->
+    <script src="src/script/jquery-3.6.0.min.js"></script>
+    <script src="src/script/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="src/css/index_style.css">
+    <script src="src/script/combo_nation_function.js"></script>
+
+
 </head>
 <body>
-    <h1>Shisse</h1>
+    <div class="container">
+        <main class="mx-auto">
+            <header>
+                <img  src="src/img/index/mainbanner.png" alt="AINBall-inator"/>
+                <hr>
+                <h1 class="text-center">Create that perfect AINBall combo tailored just for you!</h1>
+            </header>
+
+<!--            ONLY FOR DEVICE OVER 767PX-->
+            <div class="d-none d-md-block comboresult" >
+                <div class="row">
+                    <div class="col-sm my-auto mx-auto">
+                        <img class="prevbtn" src="src/img/index/prevbtn.png" alt="results"/>
+                    </div>
+                    <div class="col-lg my-auto mx-auto">
+                        <img class="combores" src="src/img/combo/blank.png" alt="results"/>
+                    </div>
+                    <div class="col-sm my-auto mx-auto">
+                        <img class="nextbtn" src="src/img/index/nextbtn.png" alt="results"/>
+                    </div>
+                </div>
+                <h3 class="text-center countryname"></h3>
+                <div class=" text-center" style="width:100%; font-size: 40px; padding: 18px;">
+                    <select class="custom-select" name="custom-select">
+                        <option value="0">Select Mood</option>
+                        <option value="1">Normal</option>
+                        <option value="2">Happy</option>
+                        <option value="3">Angry</option>
+                        <option value="4">Scared</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- ONLY FOR DEVICE BELOW 767PX-->
+            <div class="comboresult d-md-none">
+                <img class="combores" src="src/img/combo/blank.png" alt="results"/>
+                <h3 class="text-center countryname"></h3>
+                <div class="row">
+                    <div class="col align-self-start">
+                        <img class="prevbtn " src="src/img/index/prevbtn.png" alt="results"/>
+                    </div>
+                    <div class="col align-self-end">
+                        <img class="nextbtn" src="src/img/index/nextbtn.png" alt="results"/>
+                    </div>
+                </div>
+                <div class=" text-center" style="width:100%; font-size: 40px; padding: 18px;">
+                    <select class="custom-select" name="custom-select">
+                        <option value="0">Select Mood</option>
+                        <option value="1">Normal</option>
+                        <option value="2">Happy</option>
+                        <option value="3">Angry</option>
+                        <option value="4">Scared</option>
+                    </select>
+                </div>
+            </div>
+            <footer class="mx-auto">
+                <hr>
+                <a href="https://otakuweebster.github.io/"><img src="src/img/index/ow.png" alt="OtakuWeebster" /></a>
+                <p class="text-center" style="font-size: 32px;">©2022 OtakuWeebster - Gabriel Beltran</p>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
