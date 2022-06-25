@@ -4,8 +4,8 @@ $(function ()
      * VARIABLES FOR THE FUNCTIONALITY
      */
     let nationArrayIndex = 0;
-    let nationPhotoArray = ["blank", "AIN", "ACADIA", "ALPINE", "AQUILONA" , "BALISCA", "CALARE", "CALIFORNIA", "RIO"];
-    let nationArray = ["", "AIN", "Acadia", "Alpine Federation", "Aquilona" , "Balisca", "Calare", "California", "Río de La Plata"];
+    let nationPhotoArray = ["blank", "AIN", "ACADIA", "ALPINE", "AQUILONA" , "BALISCA", "CALARE", "CALIFORNIA", "ESQUIMALT", "GERMANY", "IBERIA", "ILLIUM", "JARRABAN", "KARASEM", "KOREAN", "MALERNO",  "RIO"];
+    let nationArray = ["", "AIN", "Acadia", "Alpine Federation", "Aquilona" , "Balisca", "Calare", "California", "Esquimalt", "Germany", "Iberia", "Illium", "Jarraban", "Karasem", "Korean Empire", "Malerno", "Río de La Plata"];
     let currentNationChoice = "";
     let currentMood = "BLANK";
 
