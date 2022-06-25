@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 /*
     Filename: index_style.css
@@ -11,7 +12,6 @@
 
 body
 {
-    padding: 10px;
     height: 100%;
     width: 100%;
     font-family: 'Indie Flower', cursive;
@@ -48,6 +48,13 @@ footer img
     margin: 0 auto;
 }
 
+.randomize
+{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
 .comboresult img
 {
     width: 100%;
@@ -58,6 +65,42 @@ footer img
 img.nextbtn , img.prevbtn
 {
     width: 20%;
+}
+
+/**
+WELCOME SPLASH SCREEN
+ */
+
+#loader
+{
+    background: #8acbdd;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+}
+
+#loader h2
+{
+    position: absolute;
+    text-shadow: -2px 2px rgba(0, 0, 0, 0.37);
+    font-size: 48px;
+    top: 55%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: var(--size);
+}
+
+#loader #ainball
+{
+    --size: 400px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: var(--size);
 }
 
 @media only screen and (max-width: 766px)
@@ -90,4 +133,12 @@ img.nextbtn , img.prevbtn
         font-size: 40px;
         font-weight: bold;
     }
+
+    .randomize
+    {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
 }
