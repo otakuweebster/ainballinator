@@ -36,7 +36,7 @@ $(function ()
             if (nationArrayIndex === 1)
             {
                 nationArrayIndex--;
-                photo.attr('src', 'src/img/combo/blank.png');
+                photo.attr('src', 'src/img/combo/blank_BLANK.png');
                 nation.text("");
             }
         }
@@ -51,7 +51,6 @@ $(function ()
         if (nationArrayIndex >= 0 && nationArrayIndex < nationArray.length -1)
         {
             nationArrayIndex++;
-            console.log(nationArrayIndex);
             photo.attr('src', 'src/img/combo/'+ nationPhotoArray[nationArrayIndex] +"_"+ currentMood +'.png');
             nation.text(nationArray[nationArrayIndex]);
         }
@@ -60,7 +59,7 @@ $(function ()
         {
             if (nationArrayIndex === 0)
             {
-                photo.attr('src', 'src/img/combo/blank.png');
+                photo.attr('src', 'src/img/combo/blank_BLANK.png');
                 nation.text(nationArray[nationArray]);
             }
         }
@@ -86,7 +85,6 @@ $(function ()
                    break;
         }
 
-            console.log(nationPhotoArray[nationArrayIndex] +"_"+ currentMood +'.png')
             photo.attr('src', 'src/img/combo/'+ nationPhotoArray[nationArrayIndex] +"_"+ currentMood +'.png');
     })
 
