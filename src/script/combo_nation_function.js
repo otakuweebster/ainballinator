@@ -48,6 +48,7 @@ $(function ()
     next.on("click", function ()
     {
         $('.custom-select option:eq(0)').prop('selected', true);
+        refreshPhoto();
         if (nationArrayIndex >= 0 && nationArrayIndex < nationArray.length -1)
         {
             nationArrayIndex++;
