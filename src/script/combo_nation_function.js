@@ -39,6 +39,16 @@ $(function ()
                 photo.attr('src', 'src/img/combo/blank_BLANK.png');
                 nation.text("");
             }
+
+            else
+            {
+                if (nationArrayIndex === 0)
+                {
+                    nationArrayIndex = nationPhotoArray.length - 1;
+                    photo.attr('src', 'src/img/combo/'+ nationPhotoArray[nationArrayIndex] +"_"+ currentMood +'.png');
+                    nation.text(nationArray[nationArrayIndex]);
+                }
+            }
         }
     })
 
@@ -58,6 +68,13 @@ $(function ()
 
         else
         {
+            if (nationArrayIndex === nationArray.length - 1)
+            {
+                nationArrayIndex = 0;
+                photo.attr('src', 'src/img/combo/'+ nationPhotoArray[nationArrayIndex] +"_"+ currentMood +'.png');
+                nation.text(nationArray[nationArrayIndex]);
+            }
+
             if (nationArrayIndex === 0)
             {
                 photo.attr('src', 'src/img/combo/blank_BLANK.png');
